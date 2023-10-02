@@ -536,77 +536,90 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container{
-  width: 100%;
-}
-
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
-
-.flex{
-  display: flex;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.justify-center{
-  justify-content: center;
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scroll-smooth{
   scroll-behavior: smooth;
 }
 
-.bg-blue-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+header {
+  background: #000;
+  color:green;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Rye', cursive;
+  font-size: 2.75rem;
+  max-width: 100%;
+  height: 8vh;
+  margin: 0 auto;
 }
 
-.bg-red-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+body {
+  background: #000;
 }
 
 .container {
-  width: 100%;
-  max-width: 100%;
-  height: 100vh;
-  display : flex;
+  display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  height: 100vh;
+  border: 3px green solid;
   border-radius: 10px;
-  background-color: #7d6262;
   margin: 0 auto;
+}
+
+.bottomWrapper {
+  background: #000;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  border: 3px;
+  margin: 0 auto;
+}
+
+.paragraph {
+  position: absolute;
+  color: green;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.callMe {
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  color: #ec373f;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid #ec373f;
+  border-radius: 10px;
+  background: #000;
+}
+
+.callMeWrapper {
+  position:relative;
+  left: 0rem;
+  top: 0rem;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 .item {
