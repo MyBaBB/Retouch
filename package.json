@@ -1,13 +1,11 @@
 {
   "name": "my-before-after",
-  "homepage": "https://mybabb.github.io/retouchpracticemess",
+  
   "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-     
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d  dist",
+    
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch ",
     "prettier": "npx prettier --write **/*.html"
   },
@@ -15,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gh-pages": "^6.1.0",
     "prettier-plugin-tailwindcss": "^0.3.0"
   },
   "dependencies": {
